@@ -11,6 +11,7 @@ require (
 require (
 	github.com/danwakefield/fnmatch v0.0.0-20160403171240-cbb64ac3d964 // indirect
 	github.com/go-stack/stack v1.8.1 // indirect
-	golang.org/x/sys v0.0.0-20220715151400-c0bba94af5f8 // indirect
-	gopkg.in/square/go-jose.v2 v2.6.0 // indirect
+	github.com/stretchr/testify v1.8.0 // indirect
+	golang.org/x/sys v0.2.0 // indirect
+	gopkg.in/square/go-jose.v2 v2.6.0 // indirec
 )

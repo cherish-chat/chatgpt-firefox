@@ -1,3 +1,7 @@
 chromedriver
 .idea
 *.json
+sdk/
+event.go
+main.go
+*cache/
