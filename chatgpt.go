@@ -24,3 +24,8 @@ func (h *Helper) IsLocked() bool {
 	}
 	return !locked
 }
+
+func (h *Helper) ClosePage(id string, page playwright.Page) {
+	page.Close()
+	h.pageMap.Delete(id)
+}

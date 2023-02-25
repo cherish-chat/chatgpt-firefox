@@ -44,17 +44,7 @@ func (h *Helper) NewPage(id string) (playwright.Page, error) {
 		return nil, err
 	}
 
-	logrus.Info("Navigated to google successfully")
-	response := page.WaitForResponse("https://chat.openai.com/backend-api/conversations*", playwright.PageWaitForResponseOptions{
-		Timeout: playwright.Float(1000 * 60 * 60 * 24),
-	})
-	logrus.Info("Selector found successfully")
-	// 打印
-	{
-		url := response.URL()
-		body, _ := response.Text()
-		logrus.Infof("Response from %s, body: %s", url, body)
-	}
+	logrus.Info("Navigated to openai successfully")
 	h.pageMap.Store(id, page)
 	return page, nil
 }
