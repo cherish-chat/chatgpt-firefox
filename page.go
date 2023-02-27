@@ -47,6 +47,7 @@ func (h *Helper) NewPage(id string) (playwright.Page, error) {
 	}
 	_, err = page.Goto("https://chat.openai.com/chat")
 	if err != nil {
+		page.Close()
 		logrus.Errorf("Error while navigating to google: %v", err)
 		return nil, err
 	}
