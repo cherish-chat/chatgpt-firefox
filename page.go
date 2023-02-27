@@ -4,16 +4,23 @@ import (
 	"github.com/cherish-chat/chatgpt/config"
 	"github.com/playwright-community/playwright-go"
 	"github.com/sirupsen/logrus"
-	"log"
+	"time"
 )
 
 func (h *Helper) MustGetPage(id string) playwright.Page {
 	if page, ok := h.pageMap.Load(id); ok {
 		return page.(playwright.Page)
 	}
-	page, err := h.NewPage(id)
-	if err != nil {
-		log.Fatalf("Error while creating new page: %v", err)
+	var page playwright.Page
+	for {
+		var err error
+		page, err = h.NewPage(id)
+		if err != nil {
+			logrus.Errorf("Error while creating new page: %v", err)
+			time.Sleep(time.Second * 1)
+			continue
+		}
+		break
 	}
 	return page
 }
