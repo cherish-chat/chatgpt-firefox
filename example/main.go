@@ -1,7 +1,6 @@
 package main
 
 import (
-	"github.com/cherish-chat/chatgpt"
 	"github.com/cherish-chat/xxim-server/common/utils"
 	"github.com/cherish-chat/xxim-server/sdk/config"
 	"github.com/cherish-chat/xxim-server/sdk/conn"

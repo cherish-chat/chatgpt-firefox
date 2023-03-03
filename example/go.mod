@@ -1,11 +1,11 @@
-module github.com/cherish-chat/chatgpt/example
+module github.com/cherish-chat/chatgpt-firefox/example
 
 go 1.19
 
-replace github.com/cherish-chat/chatgpt => ../../chatgpt
+replace github.com/cherish-chat/chatgpt-firefox => ../../chatgpt
 
 require (
-	github.com/cherish-chat/chatgpt v0.0.0
+	github.com/cherish-chat/chatgpt-firefox v0.0.0
 	github.com/cherish-chat/xxim-server v0.0.0-20230224015926-6981d04e77d3
 	github.com/zeromicro/go-zero v1.4.2
 	google.golang.org/protobuf v1.28.1

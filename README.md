@@ -13,7 +13,7 @@
 package main
 
 import (
-	"github.com/cherish-chat/chatgpt"
+	"github.com/cherish-chat/chatgpt-firefox"
 	"log"
 )
 

@@ -1,7 +1,7 @@
 package chatgpt
 
 import (
-	"github.com/cherish-chat/chatgpt/config"
+	"github.com/cherish-chat/chatgpt-firefox/config"
 	"github.com/playwright-community/playwright-go"
 	"github.com/sirupsen/logrus"
 	"log"

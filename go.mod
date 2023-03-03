@@ -1,4 +1,4 @@
-module github.com/cherish-chat/chatgpt
+module github.com/cherish-chat/chatgpt-firefox
 
 go 1.19
 
